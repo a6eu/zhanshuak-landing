@@ -13,6 +13,7 @@ export default {
                 foreground: 'var(--foreground)',
                 primary: '#5b84d9',
                 back: '#f0f4fe',
+                dashboardDark : '#121212'
             },
         },
     },

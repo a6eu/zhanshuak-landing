@@ -5,9 +5,9 @@ const PhoneInput = ({setPhone}: {setPhone: (value: string) => void}) => {
     const [inputValue, setInputValue] = useState<string>("");
 
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
-        const formattedPhone = formatPhone(e.target.value);
-        setInputValue(formattedPhone);
-        setPhone(formattedPhone);
+        const formattedPhone = formatPhone(e.target.value)
+        setInputValue(formattedPhone)
+        setPhone(formattedPhone)
     }
 
     return (
