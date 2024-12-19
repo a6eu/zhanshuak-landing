@@ -28,7 +28,7 @@ function DashboardHeader() {
                         alt="Zhanshuak logo"
                         className="rounded-xl object-cover"
                     />
-                    <h1 className="font-bold uppercase text-2xl">
+                    <h1 className="hidden sm:block font-bold uppercase text-2xl">
                         zhanshuak
                     </h1>
                 </Link>
@@ -44,7 +44,7 @@ function DashboardHeader() {
                 ) : (
                     <p>Not signed in</p>
                 )}
-                <button onClick={() => setUserMenuOpen(!userMenuOpen)} onBlur={() => setUserMenuOpen(false)}>
+                <button onClick={() => setUserMenuOpen(!userMenuOpen)}>
                     <UserIcon />
                 </button>
                 {userMenuOpen && (<UserMenu />)}

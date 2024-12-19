@@ -110,10 +110,10 @@ const UsersPage: React.FC = () => {
                 </div>
 
                 <button
-                    className="mb-4 p-2 bg-blue-500 text-white rounded"
+                    className="mb-4 p-2 bg-black hover:opacity-80 text-white rounded"
                     onClick={handleAddUser}
                 >
-                    Add New User
+                    + Add New User
                 </button>
 
                 <div className="overflow-x-auto">
@@ -129,12 +129,12 @@ const UsersPage: React.FC = () => {
                         <tbody>
                         {filteredUsers.map((user) => (
                             <tr key={user.id} className="border-b">
-                                <td className="p-2">{user.firstName} {user.lastName}</td>
-                                <td className="p-2">{user.diagnosis}</td>
+                                <td className="p-2 text-center">{user.firstName} {user.lastName}</td>
+                                <td className="p-2 text-center">{user.diagnosis}</td>
                                 <td className="p-2">
                                     {user.medications ? user.medications.join(', ') : "Nothing yet"}
                                 </td>
-                                <td className="p-2">
+                                <td className="p-2 text-center">
                                     <button
                                         className="text-blue-500"
                                         onClick={() => handleUserSelect(user)}

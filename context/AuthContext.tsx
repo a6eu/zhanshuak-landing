@@ -18,7 +18,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
-                // Fetch the user's role from Firestore
                 try {
                     const userRef = doc(db, 'users', user.email!);
                     const userSnap = await getDoc(userRef);
@@ -27,7 +26,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
                         const userData = userSnap.data();
                         setUser({
                             email: user.email,
-                            role: userData.role || 'user', // Default to 'user' if role is undefined
+                            role: userData.role || 'user',
                         });
                     } else {
                         console.error('No such user in Firestore');
