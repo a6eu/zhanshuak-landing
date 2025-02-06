@@ -1,9 +1,10 @@
-'use client';
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
-import BurgerButton from '@/components/icons/BurgerButton';
 import {useEffect, useState} from 'react';
 import MiniNavigationMenu from '../icons/MiniNavigation';
+import BurgerButton from "@/components/icons/BurgerButton";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);

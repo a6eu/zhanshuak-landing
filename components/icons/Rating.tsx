@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StarRating = () => {
+const Rating = () => {
     const currentColor = '#ffef00';
 
     return (
@@ -104,4 +104,4 @@ const StarRating = () => {
     );
 };
 
-export default StarRating;
+export default Rating;
