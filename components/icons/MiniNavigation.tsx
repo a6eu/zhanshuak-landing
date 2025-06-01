@@ -20,9 +20,6 @@ const MiniNavigationMenu: React.FC<Props> = ({isOpen}) => {
             <Link className="hover:underline" href={'#partners'}>
                 Partners
             </Link>
-            <Link className="hover:underline" href={'/auth'}>
-                Sign in
-            </Link>
             <Link href={'/auth'}>Sign up</Link>
         </nav>
     );

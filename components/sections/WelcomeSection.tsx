@@ -4,7 +4,7 @@ import Link from 'next/link';
 const WelcomeSection = () => {
     return (
         <section
-            className="sm:h-[90vh] h-[70vh] z-10 px-4 pt-24 flex overflow-hidden flex-col justify-between w-full bg-white">
+            className="h-[600px] z-10 w-full max-w-7xl mx-auto px-4 pt-24 flex overflow-hidden flex-col justify-between bg-white">
             <div className="pt-10 flex flex-col items-center gap-5">
                 <h3
                     style={{width: 'min(90vw, 700px)'}}

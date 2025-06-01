@@ -26,6 +26,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 15s linear infinite;
+    width: max-content;
+    gap: 40px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 .sx-react-calendar-wrapper {
     height: 500px;
     width: 100%;

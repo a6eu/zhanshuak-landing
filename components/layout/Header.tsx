@@ -31,7 +31,7 @@ const Header = () => {
             className={`z-40 fixed w-full top-0 transition-all duration-300 ${isScrolled ? 'bg-white border-b' : 'px-2 lg:px-20 py-5'}`}
         >
             <div
-                className={`flex w-full justify-between gap-5 items-center px-5 sm:px-10 ${!isScrolled ? 'rounded-full bg-black/20 backdrop-blur-sm border h-[10vh]' : 'h-[7vh]'}`}
+                className={`flex w-full justify-between gap-5 items-center px-5 sm:px-10 ${!isScrolled ? 'rounded-full bg-black/20 backdrop-blur-sm border h-[80px]' : 'h-[60px]'}`}
             >
                 <Link href={'/'} className="flex gap-4 items-center">
                     <Image
@@ -60,12 +60,6 @@ const Header = () => {
                     </Link>
                 </nav>
                 <nav className="hidden md:flex md:flex-col lg:flex-row lg:gap-4 text-xl items-center">
-                    <Link
-                        className="hover:underline"
-                        href={'/auth'}
-                    >
-                        Sign in
-                    </Link>
                     <Link
                         className="bg-[#4671c6] font-bold rounded-full text-white px-3 py-1 hover:scale-105 transition-all"
                         href={'/auth'}
