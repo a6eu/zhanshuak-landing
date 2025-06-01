@@ -62,7 +62,7 @@ const Header = () => {
                 <nav className="hidden md:flex md:flex-col lg:flex-row lg:gap-4 text-xl items-center">
                     <Link
                         className="bg-[#4671c6] font-bold rounded-full text-white px-3 py-1 hover:scale-105 transition-all"
-                        href={'/auth'}
+                        href={'https://zhanshuak-admin.vercel.app/auth'}
                     >
                         Sign up
                     </Link>
